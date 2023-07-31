@@ -6,6 +6,9 @@ var passport = require('passport');
 var authenticate = require('./authenticate');
 const cors = require('cors');
 
+const dotenv= require('dotenv');
+dotenv.config();
+
 // Loading routers
 const bookRouter = require('./routes/api/bookRouter');
 const userRouter = require('./routes/api/userRouter');
