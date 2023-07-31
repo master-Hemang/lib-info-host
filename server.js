@@ -27,10 +27,10 @@ app.use(function(req, res, next) {
 app.use(bodyParser.json());
 
 // DB config 
-const mongoURI = process.env.DB;
+//const mongoURI = process.env.DB;
 
 // Connect to mongo database
-mongoose.connect(mongoURI)
+mongoose.connect(process.env.DB)
 .then(()=> {console.log("MongoDB Connected");})
 .catch(err => console.log(err));
 
