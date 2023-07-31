@@ -4,13 +4,14 @@ const bodyParser=require('body-parser');
 const path=require('path');
 var passport = require('passport');
 var authenticate = require('./authenticate');
-
+const cors = require('cors');
 
 // Loading routers
 const bookRouter = require('./routes/api/bookRouter');
 const userRouter = require('./routes/api/userRouter');
 const issueRouter = require('./routes/api/issueRouter');
 const app= express();
+app.use(cors());
 
 app.use(function(req, res, next) {
 
