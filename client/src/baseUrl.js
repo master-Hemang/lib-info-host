@@ -1,2 +1,2 @@
 // export const baseUrl="https://lib-manage.herokuapp.com/api/";
-export const baseUrl=process.env.url;
+export const baseUrl="https://lib-server.onrender.com/api/";
