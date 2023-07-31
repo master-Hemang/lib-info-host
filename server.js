@@ -43,6 +43,7 @@ app.use('/api/books',bookRouter);
 app.use('/api/users',userRouter);
 app.use('/api/issues',issueRouter);
 
+/*
 // Serve static assets if in production
 if (process.env.NODE_ENV === 'production') {
     // Set static folder
@@ -52,7 +53,7 @@ if (process.env.NODE_ENV === 'production') {
       res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
     });
   }
-
+*/
 const port = process.env.PORT || 3000;
 
 app.listen(port, ()=> console.log(`Server started running on port ${port}`));
