@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 
 // Connect to mongo database
 const db=process.env.DB;
-mongoose.connect(db);
+mongoose.connect(db)
 .then(()=> {console.log("MongoDB Connected");})
 .catch(err => console.log(err));
 
